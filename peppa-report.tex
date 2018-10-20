@@ -1,0 +1,26 @@
+\documentclass[13.75pt,a4paper]{article}
+\usepackage{peppa}
+
+\newmintinline[latex]{latex}{}
+\newcommand{\clearpagestyle}[0]{\thispagestyle{empty}}
+
+\title{小猪佩奇的\LaTeX 报告}
+\author{小猪佩奇}
+
+
+\begin{document}
+
+\begin{titlepage}
+    % 标题（无页码）
+    \maketitle\clearpagestyle
+    % 目录（罗马页码）
+    \newpage\pagenumbering{Roman}\tableofcontents
+    % 正文（数字页码）
+    \newpage\pagenumbering{arabic}
+\end{titlepage}
+
+\include{tex/1-简介}
+\include{tex/2-图片}
+\include{tex/3-代码}
+
+\end{document}
