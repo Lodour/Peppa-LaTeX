@@ -9,12 +9,12 @@
 \subsubsection{语法高亮}
 若需要\emph{高亮支持}，则可使用 \latex|\mintinline| 进行标注。
 
-如 \latex{\mintinline{python}{import numpy as np}} 效果为 \mintinline{python}{import numpy as np}。
+如 \latex{\mintinline{python}{import numpy}} 效果为 \mintinline{python}{import numpy}。
 
 \newmintinline[python]{python}{}
 也可以使用 \latex{\newmintinline[python]{python}{}} 声明特定的高亮环境。
 
-此时 \latex{\python{import numpy as np}} 效果为 \python{import numpy as np}。
+此时 \latex{\python{import numpy}} 效果为 \python{import numpy}。
 
 \subsection{代码块}
 使用 \latex|\inputminted{python}{src/xxx.py}| 从文件插入。
