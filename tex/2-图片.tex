@@ -1,20 +1,20 @@
 \section{插入图片}
 \subsection{单张图片}
-使用如下代码，即可插入单张图片，如图 \ref{fig:single}。
+使用如下代码，效果如图 \ref{fig:single}。
 
 \inputminted{latex}{src/image-single.tex}
 \input{src/image-single.tex}
 
 \newpage
-\subsection{多张图片分别编号}
-使用如下代码，即可插入多张分别编号的图片，如图 \ref{fig:double:left} 和图 \ref{fig:double:right}。
+\subsection{多张图片（独立编号）}
+使用 \texttt{minipage} 宏包和如下代码，效果如图 \ref{fig:double:left} 和图 \ref{fig:double:right}。
 
 \inputminted{latex}{src/image-double.tex}
 \input{src/image-double.tex}
 
 \newpage
-\subsection{多张图片共同编号}
-使用如下代码，即可插入多张共同编号的图片，如图 \ref{fig:subfig} 中的图 \ref{fig:subfig:1}、图 \ref{fig:subfig:2} 等。
+\subsection{多张图片（共同编号）}
+使用 \texttt{subfigure} 宏包和如下代码，效果如图 \ref{fig:subfig} 中的图 \ref{fig:subfig:1}、\ref{fig:subfig:2} 等。
 
 \inputminted{latex}{src/image-subfig.tex}
 \input{src/image-subfig.tex}
