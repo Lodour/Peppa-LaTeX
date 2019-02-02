@@ -1,6 +1,6 @@
 \section{简介}
 
-这是一份课程报告\LaTeX 中文模板，包含了常用的预设环境和使用说明。
+这是一份 \LaTeX 中文模板手册，包含了常用的预设环境和使用说明。
 
 \subsection{使用方法}
 
@@ -9,17 +9,33 @@
 \inputminted{latex}{src/template-usage.tex}
 
 \subsection{编译}
-在 \url{https://cn.overleaf.com} 创建项目，并在左侧菜单内设置编译器为 \texttt{XeLaTeX} 即可。
+使用 \url{https://cn.overleaf.com} 创建项目，并在左侧菜单内设置编译器为 \texttt{XeLaTeX} 即可。
 
 \subsection{字体说明}
 默认字体为宋体，其他特殊字体的标识如下。
 
 \begin{itemize}
-    \item \textrm{宋体} \latex|\textrm|
-    \item \textbf{加粗} \latex|\textbf|
-    \item \textsf{黑体} \latex|\textsf|
-    \item \textit{楷体} \latex|\textit| \latex|\emph|
-    \item \texttt{仿宋} \latex|\texttt|
+    \item \textrm{宋体} \latex{\textrm}
+    \item \textbf{加粗} \latex{\textbf}
+    \item \textsf{黑体} \latex{\textsf}
+    \item \textit{楷体} \latex{\textit} \latex{\emph}
+    \item \texttt{仿宋} \latex{\texttt}
 \end{itemize}
 
-同时，可以使用 \latex|\tiny|, \latex|\scriptsize|, \latex|\footnotesize|, \latex|\small|, \latex|\normalsize|, \latex|\large|, \latex|\Large|, \latex|\LARGE|, \latex|\huge|, \latex|\Huge| 对字体大小进行调整。
+同时，可以使用 \latex{\tiny}, \latex{\scriptsize}, \latex{\footnotesize}, \latex{\small}, \latex{\normalsize}, \latex{\large}, \latex{\Large}, \latex{\LARGE}, \latex{\huge}, \latex{\Huge} 对字体大小进行调整。
+
+\subsection{中文解决方案说明}
+根据对 \LaTeX 中文环境的需求程度不同，大致有以下两种解决方案。
+
+\subsubsection{支持中文字符}
+这是最常见的需求（如本手册），解决方案如下：
+
+\begin{itemize}
+    \item 在导言处添加 \texttt{xeCJK} 宏包
+    \item 编译器选择 \texttt{XeLaTex}
+    \item 含有中文字符的 \texttt{*.tex} 文件字符编码为 \texttt{UTF-8}
+\end{itemize}
+
+\subsubsection{支持更高级的中文样式}
+
+对于更高级的中文样式，如根据 \texttt{Microsoft Word} 文档所规定的字号，或其他更严格的中文样式定制等，推荐使用 \texttt{ctex} 宏包提供的中文文档框架，具体使用方法详见其官网 \url{http://ctex.org}。
