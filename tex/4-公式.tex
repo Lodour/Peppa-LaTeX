@@ -1,0 +1,119 @@
+\section{数学公式}
+\subsection{数学符号}
+
+\newcommand{\Symbol}[1]{$#1$ & \latex{#1}}
+\newcommand{\SymbolText}[2]{$#1$ & \latex{#1} or \latex{#2}}
+\newcommand{\SymbolLine}[4]{\Symbol{#1} & \Symbol{#2} & \Symbol{#3} & \Symbol{#4} \\}
+\newcommand{\SymbolTable}[1]{
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{*{8}{l}}
+        #1
+    \end{tabular}
+    \end{table}
+}
+
+\subsubsection{数学模式重音符}
+\SymbolTable{
+    \SymbolLine{\hat{a}}{\check{a}}{\tilde{a}}{\acute{a}}
+    \SymbolLine{\grave{a}}{\dot{a}}{\ddot{a}}{\breve{a}}
+    \SymbolLine{\bar{a}}{\vec{a}}{\widehat{A}}{\widetilde{A}}
+}
+
+\subsubsection{小写希腊字母}
+\SymbolTable{
+    \SymbolLine{\alpha}{\theta}{o}{\upsilon}
+    \SymbolLine{\beta}{\vartheta}{\pi}{\phi}
+    \SymbolLine{\gamma}{\iota}{\varpi}{\varphi}
+    \SymbolLine{\delta}{\kappa}{\rho}{\chi}
+    \SymbolLine{\epsilon}{\lambda}{\varrho}{\psi}
+    \SymbolLine{\varepsilon}{\mu}{\sigma}{\omega}
+    \SymbolLine{\zeta}{\nu}{\varsigma}{}
+    \SymbolLine{\eta}{\xi}{\tau}{}
+}
+
+\subsubsection{大写希腊字母}
+\SymbolTable{
+    \SymbolLine{\Gamma}{\Lambda}{\Sigma}{\Psi}
+    \SymbolLine{\Delta}{\Xi}{\Upsilon}{\Omega}
+    \SymbolLine{\Theta}{\Pi}{\Phi}{}
+}
+
+\subsubsection{二元关系符}
+\SymbolTable{
+    \SymbolLine{+}{-}{}{}
+    \SymbolLine{\pm}{\mp}{\triangleleft}{}
+    \SymbolLine{\cdot}{\div}{\triangleright}{}
+    \SymbolLine{\times}{\setminus}{\star}{}
+    \SymbolLine{\cup}{\cap}{\ast}{}
+    \SymbolLine{\sqcup}{\sqcap}{\circ}{}
+    \SymbolLine{\vee}{\wedge}{\bullet}{}
+    \SymbolLine{\oplus}{\ominus}{\diamond}{}
+    \SymbolLine{\odot}{\oslash}{\uplus}{}
+    \SymbolLine{\otimes}{\bigcirc}{\amalg}{}
+    \SymbolLine{\bigtriangleup}{\bigtriangledown}{\dagger}{}
+    \SymbolLine{\lhd}{\rhd}{\ddagger}{}
+    \SymbolLine{\unlhd}{\unrhd}{\wr}{}
+}
+
+\subsubsection{大尺寸运算符}
+\SymbolTable{
+    \SymbolLine{\sum}{\bigcup}{\bigvee}{\bigoplus}
+    \SymbolLine{\prod}{\bigcap}{\bigwedge}{\bigotimes}
+    \SymbolLine{\coprod}{\bigsqcup}{}{\bigodot}
+    \SymbolLine{\int}{\oint}{}{\biguplus}
+}
+
+\subsubsection{箭头}
+\SymbolTable{
+    \SymbolText{\leftarrow}{\gets} & \Symbol{\longleftarrow} & \Symbol{\uparrow} & {} \\
+    \SymbolText{\rightarrow}{\to} & \Symbol{\longrightarrow} & \Symbol{\downarrow} & {} \\
+    \SymbolLine{\leftrightarrow}{\longleftrightarrow}{\updownarrow}{}
+    \SymbolLine{\Leftarrow}{\Longleftarrow}{\Uparrow}{}
+    \SymbolLine{\Rightarrow}{\Longrightarrow}{\Downarrow}{}
+    \SymbolLine{\Leftrightarrow}{\Longleftrightarrow}{\Updownarrow}{}
+    \SymbolLine{\mapsto}{\longmapsto}{\nearrow}{}
+    \SymbolLine{\hookleftarrow}{\hookrightarrow}{\searrow}{}
+    \SymbolLine{\leftharpoonup}{\rightharpoonup}{\swarrow}{}
+    \SymbolLine{\leftharpoondown}{\rightharpoondown}{\nwarrow}{}
+    \SymbolLine{\rightleftharpoons}{\iff}{\leadsto}{}
+}
+
+\subsubsection{定界符}
+\SymbolTable{
+    \SymbolLine{(}{)}{\uparrow}{\Uparrow}
+    \SymbolText{[}{\lbrack} & \SymbolText{]}{\rbrack} & \Symbol{\downarrow} & \Symbol{\Downarrow} \\
+    \SymbolText{\{}{\lbrace} & \SymbolText{\}}{\rbrace} & \Symbol{\updownarrow} & \Symbol{\Updownarrow} \\
+    \Symbol{\langle} & \Symbol{\rangle} & \SymbolText{|}{\vert} & \SymbolText{\|}{\Vert} \\
+    \SymbolLine{\lfloor}{\rfloor}{\lceil}{\rceil}
+    \SymbolLine{/}{\backslash}{}{}
+}
+
+\subsubsection{其他符号}
+\SymbolTable{
+    \SymbolLine{\dots}{\cdots}{\vdots}{\ddots}
+    \SymbolLine{\hbar}{\imath}{\jmath}{\ell}
+    \SymbolLine{\Re}{\Im}{\aleph}{\wp}
+    \SymbolLine{\forall}{\exists}{\mho}{\partial}
+    \SymbolLine{'}{\prime}{\emptyset}{\infty}
+    \SymbolLine{\nabla}{\triangle}{\Box}{\Diamond}
+    \SymbolLine{\bot}{\top}{\angle}{\surd}
+    \SymbolLine{\diamondsuit}{\heartsuit}{\clubsuit}{\spadesuit}
+    \SymbolLine{\neg}{\flat}{\natural}{\sharp}
+}
+
+\subsubsection{数学字体}
+\SymbolTable{
+    \SymbolLine{\mathrm{ABCDEFGHIJKLMNOPQRSTUVWXYZ}}{}{}{}
+    \SymbolLine{\mathrm{abcdefghijklmnopqrstuvwxyz}}{}{}{}
+    
+    \SymbolLine{\mathit{ABCDEFGHIJKLMNOPQRSTUVWXYZ}}{}{}{}
+    \SymbolLine{\mathit{abcdefghijklmnopqrstuvwxyz}}{}{}{}
+    
+    \SymbolLine{\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ}}{}{}{}
+    
+    \SymbolLine{\mathfrak{ABCDEFGHIJKLMNOPQRSTUVWXYZ}}{}{}{}
+    \SymbolLine{\mathfrak{abcdefghijklmnopqrstuvwxyz}}{}{}{}
+    
+    \SymbolLine{\mathbb{ABCDEFGHIJKLMNOPQRSTUVWXYZ}}{}{}{}
+}
