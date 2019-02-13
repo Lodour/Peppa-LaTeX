@@ -1,0 +1,67 @@
+%
+%  _____                         _        _______  __   __
+% |  __ \                       | |      |__   __| \ \ / /
+% | |__) |__ _ __  _ __   __ _  | |     __ _| | ___ \ V / 
+% |  ___/ _ \ '_ \| '_ \ / _` | | |    / _` | |/ _ \ > <  
+% | |  |  __/ |_) | |_) | (_| | | |___| (_| | |  __// . \ 
+% |_|   \___| .__/| .__/ \__,_| |______\__,_|_|\___/_/ \_\
+%           | |   | |                                     
+%           |_|   |_|                                     
+%
+
+%-----------------------------------------------------------------
+% 页面设置
+%-----------------------------------------------------------------
+% 页边距
+\usepackage{geometry}
+\geometry{top=3.0cm, bottom=3.0cm}
+\geometry{left=2.6cm, right=2.6cm}
+
+%-----------------------------------------------------------------
+% 字体
+%-----------------------------------------------------------------
+% 添加中文支持
+\usepackage{xeCJK}
+
+%-----------------------------------------------------------------
+% 排版格式
+%-----------------------------------------------------------------
+% 目录深度
+\setcounter{tocdepth}{2}
+% 首行缩进
+\usepackage{indentfirst}
+% 脚注
+\usepackage[bottom, perpage]{footmisc}
+
+%-----------------------------------------------------------------
+% 常用功能
+%-----------------------------------------------------------------
+% 数学公式
+\usepackage{amsmath, amsthm, amssymb}
+% 图片
+\usepackage{graphicx, subfigure}
+% 图片不跨章节
+\usepackage[section]{placeins} 
+% 表格
+\usepackage{listings}
+% 代码高亮
+\usepackage[cache=false]{minted}
+\setminted{frame=single,breaklines,linenos,tabsize=2}
+% 超链接
+\usepackage[colorlinks, linkcolor=black, anchorcolor=black, citecolor=black]{hyperref}
+% 枚举编号
+\usepackage{enumitem}
+
+%-----------------------------------------------------------------
+% 中文译名
+%-----------------------------------------------------------------
+\renewcommand{\today}{\number\year 年 \number\month 月 \number\day 日}
+\renewcommand{\contentsname}{目\qquad 录}
+\renewcommand\figurename{图}
+\renewcommand\lstlistingname{表}
+
+%-----------------------------------------------------------------
+% 预定义代码高亮环境
+%-----------------------------------------------------------------
+\newmintinline[latex]{latex}{}
+\newmintinline[python]{python}{}

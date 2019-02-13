@@ -1,0 +1,26 @@
+\section{插入代码}
+
+\subsection{行内代码}
+\subsubsection{等宽字体}
+若仅需要使用\emph{等宽字体}，可直接使用 \latex{\texttt} 进行标注。
+
+如 \latex{\texttt{keyword}} 对 keyword 标注效果为 \texttt{keyword}。
+
+\subsubsection{语法高亮}
+若需要\emph{高亮支持}，则可使用 \latex{\mintinline} 进行标注。
+
+如 \latex{\mintinline{python}{import numpy}} 效果为 \mintinline{python}{import numpy}。
+
+也可以使用 \latex{\newmintinline[python]{python}{}} 声明特定的高亮环境，并直接由 \latex{\python{import numpy}} 实现相同标注效果。
+
+\subsection{代码块}
+使用 \latex|\inputminted{python}{src/xxx.py}| 从文件插入。
+
+或使用如下代码，
+\inputminted{latex}{src/code.tex}
+
+插入效果为：
+\input{src/code.tex}
+
+\subsection{更多效果}
+请参考 \texttt{minted} 宏包的文档 \url{https://github.com/gpoore/minted}。
